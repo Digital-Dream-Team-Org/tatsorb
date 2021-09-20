@@ -1,0 +1,13 @@
+
+.icon-up-dir:before { content: '\25b4'; } /* '▴' */
+.icon-right-dir:before { content: '\25b8'; } /* '▸' */
+.icon-down-dir:before { content: '\25be'; } /* '▾' */
+.icon-left-dir:before { content: '\25c2'; } /* '◂' */
+.icon-down-open:before { content: '\e75c'; } /* '' */
+.icon-left-open:before { content: '\e75d'; } /* '' */
+.icon-instagram-social-network-logo-of-photo-camera:before { content: '\e75e'; } /* '' */
+.icon-up-open:before { content: '\e75f'; } /* '' */
+.icon-right-open:before { content: '\e808'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */

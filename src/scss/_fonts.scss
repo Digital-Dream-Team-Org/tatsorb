@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Stolzl"), local("Stolzl-Regular"),
+    url("../fonts/Stolzl/Stolzl-Regular.woff2") format("woff2"),
+    url("../fonts/Stolzl/Stolzl-Regular.woff") format("woff"),
+    url("../fonts/Stolzl/Stolzl-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Stolzl Bold"), local("Stolzl-Bold"),
+    url("../fonts/Stolzl/Stolzl-Bold.woff2") format("woff2"),
+    url("../fonts/Stolzl/Stolzl-Bold.woff") format("woff"),
+    url("../fonts/Stolzl/Stolzl-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Stolzl Light"), local("Stolzl-Light"),
+    url("../fonts/Stolzl/Stolzl-Light.woff2") format("woff2"),
+    url("../fonts/Stolzl/Stolzl-Light.woff") format("woff"),
+    url("../fonts/Stolzl/Stolzl-Light.ttf") format("truetype");
+}

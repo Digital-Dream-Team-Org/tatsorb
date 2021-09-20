@@ -1,0 +1,90 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
+      "css": "right-open",
+      "code": 59400,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d870630ff8f81e6de3958ecaeac532f2",
+      "css": "left-open",
+      "code": 59229,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ccddff8e8670dcd130e3cb55fdfc2fd0",
+      "css": "down-open",
+      "code": 59228,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fe6697b391355dec12f3d86d6d490397",
+      "css": "up-open",
+      "code": 59231,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2d6150442079cbda7df64522dc24f482",
+      "css": "down-dir",
+      "code": 9662,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "80cd1022bd9ea151d554bec1fa05f2de",
+      "css": "up-dir",
+      "code": 9652,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9dc654095085167524602c9acc0c5570",
+      "css": "left-dir",
+      "code": 9666,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fb1c799ffe5bf8fb7f8bcb647c8fe9e6",
+      "css": "right-dir",
+      "code": 9656,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f3d95e13eb43f3f6b8efe1eb424a1e3b",
+      "css": "vkontakte",
+      "code": 61833,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e58542f4790c33bd77d21aa8505b4c53",
+      "css": "instagram-social-network-logo-of-photo-camera",
+      "code": 59230,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M128.4 0H871.6C942.2 0 1000 52.3 1000 128.3V871.7C1000 947.7 942.2 1000 871.6 1000H128.4C57.7 1000 0 947.7 0 871.7V128.3C0 52.3 57.7 0 128.4 0L128.4 0ZM728.5 111.1C703.7 111.1 683.5 131.4 683.5 156.1V263.9C683.5 288.6 703.7 308.9 728.5 308.9H841.5C866.2 308.9 886.5 288.6 886.5 263.9V156.1C886.5 131.4 866.2 111.1 841.5 111.1H728.5L728.5 111.1ZM887 422.9H799C807.3 450.1 811.8 478.9 811.8 508.7 811.8 675 672.6 809.8 500.9 809.8 329.3 809.8 190.1 675 190.1 508.7 190.1 478.9 194.6 450.1 203 422.9H111.1V845.3C111.1 867.2 129 885.1 150.9 885.1H847.2C869.1 885.1 887 867.2 887 845.3V422.9H887ZM500.9 303.2C390 303.2 300.1 390.3 300.1 497.8 300.1 605.3 390 692.4 500.9 692.4 611.9 692.4 701.8 605.3 701.8 497.8 701.8 390.3 611.9 303.2 500.9 303.2Z",
+        "width": 1000
+      },
+      "search": [
+        "instagram-social-network-logo-of-photo-camera"
+      ]
+    },
+    {
+      "uid": "559647a6f430b3aeadbecd67194451dd",
+      "css": "menu",
+      "code": 61641,
+      "src": "fontawesome"
+    }
+  ]
+}
