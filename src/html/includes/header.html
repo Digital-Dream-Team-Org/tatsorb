@@ -25,7 +25,10 @@
               src="assets/orange_phone.png"
               alt="phone"
             />
-            <span>8 (800) <b>500-65-76</b></span>
+            <span>
+              8 (800)
+              <b>500-65-76</b>
+            </span>
           </a>
         </div>
         <div class="main-header__phone main-header__phone--small mb-3">
@@ -46,7 +49,10 @@
               src="assets/orange_mail.png"
               alt="email"
             />
-            <span><b>tatsorb</b>@mail.ru</span>
+            <span>
+              <b>tatsorb</b>
+              @mail.ru
+            </span>
           </a>
           <a
             href="#"
@@ -93,7 +99,17 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a
+              class="nav-link dropdown-toggle toggle-nested-menu"
+              data-c-nested-menu="productMenu"
+              href="#"
+              role="button"
+            >
+              Продукция
+            </a>
+          </li>
+          <!-- <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -110,18 +126,18 @@
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
+          </li> -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Отзывы</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"> Отзывы </a>
+            <a class="nav-link" href="#">Тендеры</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"> Тендеры </a>
+            <a class="nav-link" href="#">Доставка</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"> Доставка </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#"> Контакты </a>
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="navbar-nav social-nav ml-auto">
@@ -152,7 +168,10 @@
                 src="assets/orange_phone.png"
                 alt="phone"
               />
-              <span>8 (800) <b>500-65-76</b></span>
+              <span>
+                8 (800)
+                <b>500-65-76</b>
+              </span>
             </a>
           </div>
           <div class="main-header__phone main-header__phone--small mb-3">
@@ -163,4 +182,157 @@
       </div>
     </div>
   </nav>
+  <div class="overlay-menu-wrap" data-c-nested-menu-id="productMenu">
+    <div class="container h-100">
+      <div class="overlay-menu__container">
+        <div class="overlay-menu__controls">
+          <button class="overlay-menu__back-btn d-none">
+            <i class="icon-left-open"></i>
+            <span>Back</span>
+          </button>
+          <button class="overlay-menu__close-btn">
+            <span>✖</span>
+            <span>Close</span>
+          </button>
+        </div>
+        <div class="overlay-menu-col">
+          <ul class="overlay-menu">
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link toggle-nested" href="#">Menu Item</a>
+              <ul class="overlay-menu overlay-menu--nested">
+                <li class="overlay-menu__item">
+                  <a class="overlay-menu__link toggle-nested" href="#">
+                    Menu Item
+                  </a>
+                  <ul class="overlay-menu overlay-menu--nested">
+                    <li class="overlay-menu__item">
+                      <a class="overlay-menu__link" href="#">Menu Item 2</a>
+                    </li>
+                    <li class="overlay-menu__item">
+                      <a class="overlay-menu__link" href="#">Menu Item 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="overlay-menu__item">
+                  <a class="overlay-menu__link" href="#">Menu Item</a>
+                </li>
+              </ul>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link toggle-nested" href="#">Menu Item</a>
+              <ul class="overlay-menu overlay-menu--nested">
+                <li class="overlay-menu__item">
+                  <a class="overlay-menu__link" href="#">Menu Item 2</a>
+                </li>
+                <li class="overlay-menu__item">
+                  <a class="overlay-menu__link toggle-nested" href="#">
+                    Menu Item 2
+                  </a>
+                  <ul class="overlay-menu overlay-menu--nested">
+                    <li class="overlay-menu__item">
+                      <a class="overlay-menu__link" href="#">
+                        Menu Item Inner 2
+                      </a>
+                    </li>
+                    <li class="overlay-menu__item">
+                      <a class="overlay-menu__link" href="#">
+                        Menu Item Inner 2
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link toggle-nested" href="#">Menu Item</a>
+              <ul class="overlay-menu overlay-menu--nested">
+                <li class="overlay-menu__item">
+                  <a class="overlay-menu__link" href="#">Menu Item Inner 2</a>
+                </li>
+                <li class="overlay-menu__item">
+                  <a class="overlay-menu__link" href="#">Menu Item Inner 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="overlay-menu-col overlay-menu-col--1 show">
+          <ul class="overlay-menu">
+            <li class="overlay-menu__item">
+              <a
+                class="overlay-menu__link  "
+                href="#"
+                data-c-nested-col-id="2"
+                data-c-nested-col-menu-id="menu1"
+              >
+                Menu Item
+              </a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link  " href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link  " href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link  " href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link  " href="#">Menu Item</a>
+            </li>
+          </ul>
+        </div>
+        <div class="overlay-menu-col overlay-menu-col--2">
+          <ul class="overlay-menu" id="menu1">
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+          </ul>
+        </div>
+        <div class="overlay-menu-col overlay-menu-col--3">
+          <ul class="overlay-menu">
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a class="overlay-menu__link" href="#">Menu Item</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
 </header>
