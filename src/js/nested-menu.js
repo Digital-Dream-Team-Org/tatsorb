@@ -1,5 +1,6 @@
 (function ($) {
   $(document).ready(function () {
+    // Open overlay menu
     $("[data-c-nested-menu]").on("click", function (e) {
       e.preventDefault();
 
@@ -22,19 +23,10 @@
         }, 0);
       }
 
-      // Hide nested
+      // Fold nested menu inside overlay
       $(".overlay-menu__item").removeClass("active");
-
-      // if (!$($menu).hasClass("active")) {
-      //   $($menu).addClass("active");
-      //   $(".overlay-menu-col--1")
-      //     .addClass("show")
-      //     .find(".overlay-menu")
-      //     .addClass("show");
-      // } else {
-      //   $($menu).removeClass("active");
-      // }
     });
+    // Close overlay menu on outside click
     $("body").on("click", function (e) {
       if ($(e.target).data("cNestedMenu")) {
         return;
@@ -52,7 +44,15 @@
         }
       }
     });
+    // Close overlay menu on window resize
+    $(window).on("resize", function () {
+      const $menus = $(`[data-c-nested-menu-id]`);
+      if ($menus.length) {
+        $menus.removeClass("active");
+      }
+    });
 
+    // Open nested menu
     $(".overlay-menu__link.toggle-nested").on("click", function () {
       const self = $(this);
       const wWidth = $(window).outerWidth(true);
@@ -89,6 +89,7 @@
       // Show back btn
       $(".overlay-menu__back-btn").removeClass("d-none");
     });
+    // Close inner nested menu on mobile on button click
     $(".overlay-menu__back-btn").on("click", function () {
       const $items = $(this)
         .closest(".overlay-menu-wrap")
@@ -111,6 +112,7 @@
         $(".overlay-menu__back-btn").addClass("d-none");
       }
     });
+    // Close menu overlay on mobile on button click
     $(".overlay-menu__close-btn").on("click", function () {
       const $menus = $(`[data-c-nested-menu-id].active`);
       $menus.each(function () {
