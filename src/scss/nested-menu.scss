@@ -32,16 +32,20 @@
   margin-left: -10px;
   margin-right: -10px;
   padding: 20px 0;
-  border-right: 1px solid #f1f1f1;
-  background: #fff;
+  // border-right: 1px solid #f1f1f1;
+  border-right: 1px solid #e87400;
+  // background: #fff;
+  background: #ff7e00;
 
   &__item {
     // padding: 8px 12px;
     &:not(:last-child) {
-      border-bottom: 1px solid #f1f1f1;
+      // border-bottom: 1px solid #f1f1f1;
+      border-bottom: 1px solid #ff7e00;
     }
     &:hover {
-      background: #f1f1f1;
+      // background: #f1f1f1;
+      background: #d06800;
     }
   }
   &__link {
@@ -88,7 +92,8 @@
   display: none;
 }
 .overlay-menu__item.active {
-  background: #f1f1f1;
+  // background: #f1f1f1;
+  background: #d06800;
   // position: relative;
   & > .overlay-menu--nested {
     display: block;
@@ -96,7 +101,8 @@
     position: absolute;
     right: calc(-100% + 9px);
     top: 0;
-    background: #fff;
+    // background: #fff;
+    background: #ff7e00;
     width: 100%;
   }
 }
@@ -123,7 +129,8 @@
   .overlay-menu-wrap {
     top: 105px !important;
     height: 100%;
-    background: #fff;
+    // background: #fff;
+    background: #ff7e00;
   }
   .overlay-menu__container {
     height: 100%;
@@ -140,13 +147,15 @@
   }
 
   .overlay-menu__item.active {
-    background: #fff;
+    // background: #fff;
+    background: #ff7e00;
     // position: relative;
     & > .overlay-menu--nested {
       height: 100%;
       right: unset;
       top: 0;
-      background: #fff;
+      // background: #fff;
+      background: #ff7e00;
       z-index: 1;
       padding: 0 12px;
       padding-top: 20px;

@@ -44,6 +44,13 @@
         }
       }
     });
+    // Fix to close overlay menu on bootstrap dropdown click
+    $(`[data-toggle="dropdown"]`).on("click", function () {
+      const $menus = $(`[data-c-nested-menu-id].active`);
+      if ($menus.length) {
+        $menus.removeClass("active");
+      }
+    });
     // Close overlay menu on window resize
     $(window).on("resize", function () {
       const $menus = $(`[data-c-nested-menu-id]`);
@@ -52,43 +59,86 @@
       }
     });
 
-    // Open nested menu
-    $(".overlay-menu__link.toggle-nested").on("click", function () {
-      const self = $(this);
-      const wWidth = $(window).outerWidth(true);
-      const zIndex = wWidth >= 576 ? "-1" : "1";
-      $(".overlay-menu__item").removeClass("active");
-      const $parents = $(this).parents(".overlay-menu__item");
-      $parents.each(function (index) {
-        $(this).addClass("active");
-        const nested = self
-          .closest(".overlay-menu__item")
-          .find(".overlay-menu--nested");
+    // Open nested menu (hover version)
+    $(".overlay-menu-hover .overlay-menu__link.toggle-nested").on(
+      "mouseover",
+      function () {
+        const self = $(this);
+        const wWidth = $(window).outerWidth(true);
+        const zIndex = wWidth >= 576 ? "-1" : "1";
+        $(".overlay-menu__item").removeClass("active");
+        const $parents = $(this).parents(".overlay-menu__item");
+        $parents.each(function (index) {
+          $(this).addClass("active");
+          const nested = self
+            .closest(".overlay-menu__item")
+            .find(".overlay-menu--nested");
 
-        $(nested).css({
-          "z-index": zIndex,
-          transform: "translateX(-100%)",
-          transition: "350ms",
-        });
-        setTimeout(() => {
           $(nested).css({
-            transform: "translateX(0%)",
+            "z-index": zIndex,
+            transform: "translateX(-100%)",
+            transition: "350ms",
           });
           setTimeout(() => {
             $(nested).css({
-              "z-index": "",
-              transform: "",
-              transition: "",
+              transform: "translateX(0%)",
             });
-          }, 450);
-        }, 0);
-      });
+            setTimeout(() => {
+              $(nested).css({
+                "z-index": "",
+                transform: "",
+                transition: "",
+              });
+            }, 450);
+          }, 0);
+        });
 
-      // Hide close btn inside nested
-      $(".overlay-menu__close-btn").addClass("d-none");
-      // Show back btn
-      $(".overlay-menu__back-btn").removeClass("d-none");
-    });
+        // Hide close btn inside nested
+        $(".overlay-menu__close-btn").addClass("d-none");
+        // Show back btn
+        $(".overlay-menu__back-btn").removeClass("d-none");
+      },
+    );
+    // Open nested menu (default)
+    $(".overlay-menu")
+      .not(".overlay-menu-hover")
+      .find(".overlay-menu__link.toggle-nested")
+      .on("click", function () {
+        const self = $(this);
+        const wWidth = $(window).outerWidth(true);
+        const zIndex = wWidth >= 576 ? "-1" : "1";
+        $(".overlay-menu__item").removeClass("active");
+        const $parents = $(this).parents(".overlay-menu__item");
+        $parents.each(function (index) {
+          $(this).addClass("active");
+          const nested = self
+            .closest(".overlay-menu__item")
+            .find(".overlay-menu--nested");
+
+          $(nested).css({
+            "z-index": zIndex,
+            transform: "translateX(-100%)",
+            transition: "350ms",
+          });
+          setTimeout(() => {
+            $(nested).css({
+              transform: "translateX(0%)",
+            });
+            setTimeout(() => {
+              $(nested).css({
+                "z-index": "",
+                transform: "",
+                transition: "",
+              });
+            }, 450);
+          }, 0);
+        });
+
+        // Hide close btn inside nested
+        $(".overlay-menu__close-btn").addClass("d-none");
+        // Show back btn
+        $(".overlay-menu__back-btn").removeClass("d-none");
+      });
     // Close inner nested menu on mobile on button click
     $(".overlay-menu__back-btn").on("click", function () {
       const $items = $(this)
