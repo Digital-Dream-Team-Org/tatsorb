@@ -1,5 +1,9 @@
 (function ($) {
   $(document).ready(function () {
+    // Add class to dropdown btn
+    $("[data-c-nested-add-classes]").addClass(
+      "dropdown-toggle toggle-nested-menu",
+    );
     // Open overlay menu
     $("[data-c-nested-menu]").on("click", function (e) {
       e.preventDefault();
